@@ -10,6 +10,10 @@ manager = Manager(app)
 manager.add_command('server', Server)
 manager.add_command('db', MigrateCommand)
 
+
 @manager.shell
 def make_shell_context():
- return dict(app = app, db=db, blog=Blog, comment=Comment, user=User)
+  return dict(app = app, db=db, blog=Blog, comment=Comment, user=User)
+
+if __name__ == '__main__':
+  manager.run()
