@@ -10,7 +10,7 @@
 
         <form class="d-md-flex justify-content-center align-items-center" action="{{url_for('main.subscribe')}}" method="POST">
             <input type="email" class="form-control " name="subscriber" required placeholder="Email Address...">
-            <button class="btn btn-md btn-outline-info ml-2" id="subs">Subscribe</button>
+            <button class="btn btn-md btn btn-outline-success ml-2" id="subs">Subscribe</button>
         </form>
 
 
@@ -19,8 +19,8 @@
                 <li><a class="nav-item other btn btn-outline-success m-3" href="/">Home</a></li>
                 <li><a class="nav-item other btn btn-outline-success m-3" href="{{ url_for('main.postblog') }}">Post A Blog</a></li>
                 {% if current_user.is_authenticated %}
-                <li><a class="nav-item other" href="{{ url_for('main.profile', uname = current_user.username) }}">{{ current_user.username| capitalize }}</a></li>
-                <li><a class="nav-item other btn btn-outline-success" href="{{url_for('auth.logout')}}">Log Out</a></li>
+                <li><a class="nav-item other btn btn-outline-success m-3" href="{{ url_for('main.profile', uname = current_user.username) }}">{{ current_user.username| capitalize }}</a></li>
+                <li><a class="nav-item other btn btn-outline-success m-3" href="{{url_for('auth.logout')}}">Log Out</a></li>
                 {% else %}
                 <li><a class="nav-item other btn btn-outline-success m-3" href="{{url_for('auth.login')}}">Sign In</a></li>
                 {% endif %}
