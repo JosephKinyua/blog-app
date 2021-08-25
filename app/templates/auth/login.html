@@ -3,7 +3,7 @@
 <div class="container d-flex justify-content-center align-items-center mt-5 mb-2">
 
     <div class="loginForm">
-        <h2 class="text-center">Login</h2>
+        <h3 class="text-center">Login</h3>
 
         {% for message in get_flashed_messages() %}
         <div class="alert alert-danger">
@@ -13,8 +13,8 @@
         <p>Don't have an account? <a href="{{ url_for('auth.register') }}">Create Account</a></p>
     </div>
 </div>
-<hr>
-<div class="text-center mt-md-4">
+
+<div class="profile mt-5">
     <p>{{ quote.quote }}</p>
     <sub>--{{ quote.author }}--</sub>
 </div>

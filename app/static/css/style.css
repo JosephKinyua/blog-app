@@ -28,5 +28,6 @@
 
 .profile {
     background-color: rgba(245, 222, 18, 0.5);
-    padding: 300px;
+    padding: 150px;
+    border-radius: 18px;
 }

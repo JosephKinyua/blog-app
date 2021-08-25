@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% import 'bootstrap/wtf.html' as wtf %} {% block content %}
-<h1 class="text-center mb-3">Blog Post</h1>
+<h2 class="text-center mb-3">Blog Post</h2>
 
 <a class="btn btn-outline-success" href=" {{ url_for( 'main.profile', uname=current_user.username)}} ">Back</a>
 <div class="container d-flex justify-content-center align-items-center mt-5 ">
@@ -8,9 +8,7 @@
         {{ wtf.quick_form(blogform)}}
     </div>
 </div>
-<p class="text-danger ">Give it a minute will take you back Profile</p>
-<hr>
-<div class="postblog ">
+<div class="postblog mt-5">
     <p>{{ quote.quote }}</p>
     <sub>--{{ quote.author }}--</sub>
 </div>
