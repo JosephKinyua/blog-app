@@ -99,7 +99,7 @@ def subscribe():
         email = request.form.get('subscriber')
         new_sub = Subscribe(email=email)
         new_sub.save_subscriber()
-        mail_message("Subscribed to Maingi Blog","email/welcome_subscriber", email)
+        mail_message("Subscribed to Joseph Blog","email/welcome_subscriber", email)
 
         return redirect(url_for('main.index'))
  
