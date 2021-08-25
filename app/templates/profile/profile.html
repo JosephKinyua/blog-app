@@ -25,7 +25,7 @@
                 </div>
                 <div class="d-md-flex justify-content-around align-items-center">
                     <span><i class="fa fa-comments" aria-hidden="true"></i> {{justone.comments.count()}}</span>
-                    <a href="{{ url_for('main.viewcomments', id=justone.id) }}">View Comments</a>
+                    <a class="btn btn-outline-success" href="{{ url_for('main.viewcomments', id=justone.id) }}">View Comments</a>
                     <a class="text-danger" href="{{ url_for('main.deletePost', id=justone.id) }}"><i class="fa fa-trash-o" aria-hidden="true"></i>
         </a>
                 </div>
@@ -34,8 +34,8 @@
             <p>No Blogs Yet</p>
             {% endif %}
         </div>
-        <hr class='mt-4'>
-        <div class="profile">
+
+        <div class="profile mt-5">
             <p>{{ quote.quote }}</p>
             <sub>--{{ quote.author }}--</sub>
         </div>
