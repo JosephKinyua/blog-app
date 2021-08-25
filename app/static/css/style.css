@@ -6,3 +6,27 @@
     border-radius: 5px;
     font-size: 17px;
 }
+
+.postForm {
+    width: 450px;
+    margin-top: 30px;
+    background-color: rgba(245, 222, 18, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.postblog {
+    background-color: rgba(245, 222, 18, 0.5);
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    padding: 20px;
+}
+
+.profile {
+    background-color: rgba(245, 222, 18, 0.5);
+    padding: 300px;
+}
