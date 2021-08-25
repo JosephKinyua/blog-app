@@ -15,7 +15,7 @@ def get_quotes():
         return new_quote
 
   except urllib.error.URLError:
-      author = 'Maingi Samuel'
-      quote = 'Never Give Up But If you want to Give up just give up the giving up'
+      author = 'Joseph Nyaga'
+      quote = 'We are all in the gutter, but some of us are looking at the stars.'
       new_quote = Quote(author, quote)
       return new_quote
