@@ -31,7 +31,7 @@ For any query you can reach me vai email kinyuajoseph2014@gmail.com
 
 ## Live link
 ``````
-
+https://joseblogs.herokuapp.com/
 ``````
 ### License
 [MIT Licence](https://choosealicense.com/licenses/mit/)
