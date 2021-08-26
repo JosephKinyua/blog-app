@@ -10,6 +10,7 @@ import time
 
 
 @main.route('/')
+@login_required
 def index():
   blog = Blog.get_blogs_content()
   title = 'Blog'
@@ -68,7 +69,7 @@ def comment(id):
 
   return render_template('profile/comment.html', comment=form, blog=blog, blogcomment = blogcomment, quote=quote)
 
-@main.route('/post/<id>/comments', methods=['GET'])
+@main.route('/post/<id>/comments', methods=['GET', 'POST'])
 def viewcomments(id):
   allcomments = Comment.query.filter_by(blog_id=id).all()
   quote = get_quotes()
